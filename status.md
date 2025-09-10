@@ -4,5 +4,5 @@
 4. layout.tsx 작성 (완료)
 5. types/product.ts 상품 타입 정의 (완료)
 6. lib/products.ts 데이터 접근 유틸 구현 (서버 전용: 페이지네이션/필터/정렬, getProductBySlug, 카테고리 목록) (완료)
-7. 상품 목록(ISR 60s) 구현: app/(store)/products/page.tsx, ProductCard/FilterBar, 이미지 sizes 최적화
+7. 상품 목록(ISR 60s) 구현: app/(store)/products/page.tsx, ProductCard/FilterBar, 이미지 sizes 최적화 (완료)
 8. 상품 상세(SSG 10,000) 구현: app/(store)/products/[slug]/page.tsx, generateStaticParams, 연관 상품
