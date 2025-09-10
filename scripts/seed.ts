@@ -33,11 +33,12 @@ async function main(count = 10000) {
     const ratingCount = faker.number.int({ min: 0, max: 5000 });
     const category = faker.helpers.arrayElement(CATEGORIES);
     const brand = faker.helpers.arrayElement(BRANDS);
-    const slug = `${slugify(title)}-${String(i + 1).padStart(5, '0')}`;
+    const id = i + 1;
+    const slug = `${id}-${slugify(title)}`;
     const imgs = imageSet(i + 1);
 
     return {
-      id: i + 1,
+      id,
       slug,
       title,
       description: faker.commerce.productDescription(),
